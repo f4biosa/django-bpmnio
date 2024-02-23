@@ -1,0 +1,49 @@
+{
+  "_from": "component-event@^0.2.1",
+  "_id": "component-event@0.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-wGA++isMqiDq1jPYeyv2as/Bt/u+3iLW0rEa+8NQ82jAv3TgqMiCM+B2SaBdn2DfLilLjjq736YcezihRYhfxw==",
+  "_location": "/component-event",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "component-event@^0.2.1",
+    "name": "component-event",
+    "escapedName": "component-event",
+    "rawSpec": "^0.2.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.2.1"
+  },
+  "_requiredBy": [
+    "/min-dom"
+  ],
+  "_resolved": "https://registry.npmjs.org/component-event/-/component-event-0.2.1.tgz",
+  "_shasum": "8262d2be886c999ad4b85ed3e0dfb3b3e98ca9d3",
+  "_spec": "component-event@^0.2.1",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/min-dom",
+  "bugs": {
+    "url": "https://github.com/component/event/issues"
+  },
+  "bundleDependencies": false,
+  "component": {
+    "scripts": {
+      "event/index.js": "index.js"
+    }
+  },
+  "deprecated": false,
+  "description": "Event binding component",
+  "homepage": "https://github.com/component/event#readme",
+  "keywords": [
+    "browser",
+    "event",
+    "events"
+  ],
+  "license": "MIT",
+  "name": "component-event",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/component/event.git"
+  },
+  "version": "0.2.1"
+}

@@ -1,0 +1,92 @@
+{
+  "_from": "moddle@^6.0.0",
+  "_id": "moddle@6.2.3",
+  "_inBundle": false,
+  "_integrity": "sha512-bLVN+ZHL3aKnhxc19XtjUfvdJsS3EsiEJC7bT6YPD11qYmTzvsxrGgyYz1Ouof7TZuGw0lDJ1OLmEnxcpQWk3Q==",
+  "_location": "/moddle",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "moddle@^6.0.0",
+    "name": "moddle",
+    "escapedName": "moddle",
+    "rawSpec": "^6.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^6.0.0"
+  },
+  "_requiredBy": [
+    "/bpmn-moddle",
+    "/moddle-xml"
+  ],
+  "_resolved": "https://registry.npmjs.org/moddle/-/moddle-6.2.3.tgz",
+  "_shasum": "03ff1e57633ce287d28cdf276d6ad20741302f69",
+  "_spec": "moddle@^6.0.0",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/bpmn-moddle",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/Nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/moddle/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "dependencies": {
+    "min-dash": "^4.0.0"
+  },
+  "deprecated": false,
+  "description": "A library for importing meta-model based file formats into JS",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.34.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "mocha": "^10.2.0",
+    "npm-run-all": "^4.1.2",
+    "rollup": "^3.17.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/bpmn-io/moddle#readme",
+  "keywords": [
+    "model",
+    "meta-model",
+    "xml",
+    "xsd",
+    "import",
+    "export"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "name": "moddle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/moddle.git"
+  },
+  "scripts": {
+    "all": "run-s lint test distro",
+    "build": "rollup -c",
+    "dev": "npm test -- --watch",
+    "distro": "run-s build test:build",
+    "lint": "eslint .",
+    "prepare": "npm run build",
+    "prepublishOnly": "run-s distro",
+    "test": "mocha --reporter=spec --recursive test/spec",
+    "test:build": "mocha --reporter=spec --recursive test/distro"
+  },
+  "sideEffects": false,
+  "source": "lib/index.js",
+  "type": "module",
+  "umd:main": "dist/moddle.umd.cjs",
+  "version": "6.2.3"
+}

@@ -1,0 +1,69 @@
+{
+  "_from": "domify@^1.4.1",
+  "_id": "domify@1.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-m4yreHcUWHBncGVV7U+yQzc12vIlq0jMrtHZ5mW6dQMiL/7skSYNVX9wqKwOtyO9SGCgevrAFEgOCAHmamHTUA==",
+  "_location": "/domify",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "domify@^1.4.1",
+    "name": "domify",
+    "escapedName": "domify",
+    "rawSpec": "^1.4.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.1"
+  },
+  "_requiredBy": [
+    "/min-dom"
+  ],
+  "_resolved": "https://registry.npmjs.org/domify/-/domify-1.4.2.tgz",
+  "_shasum": "2d3e8ac49cae41206cc84be31ca401050ae780a6",
+  "_spec": "domify@^1.4.1",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/min-dom",
+  "author": {
+    "name": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/domify/issues"
+  },
+  "bundleDependencies": false,
+  "component": {
+    "scripts": {
+      "domify/index.js": "index.js"
+    }
+  },
+  "dependencies": {},
+  "deprecated": false,
+  "description": "turn HTML into DOM elements",
+  "devDependencies": {
+    "jsdom": "^16.5.3",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^8.3.2"
+  },
+  "files": [
+    "index.js"
+  ],
+  "funding": "https://github.com/sponsors/sindresorhus",
+  "homepage": "https://github.com/sindresorhus/domify#readme",
+  "keywords": [
+    "dom",
+    "html",
+    "client",
+    "browser",
+    "component"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "domify",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/domify.git"
+  },
+  "scripts": {
+    "test": "mocha -r jsdom-global/register"
+  },
+  "version": "1.4.2"
+}

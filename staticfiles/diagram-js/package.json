@@ -1,0 +1,123 @@
+{
+  "_from": "diagram-js@^13.4.0",
+  "_id": "diagram-js@13.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-JI6UI74J3TgRcgBhuZZJso//bUdh22rcVu9XSf1EBVisKPt9c+woKzOrr/79OutXvft+1NOLNEiBg58kZ8p7+Q==",
+  "_location": "/diagram-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "diagram-js@^13.4.0",
+    "name": "diagram-js",
+    "escapedName": "diagram-js",
+    "rawSpec": "^13.4.0",
+    "saveSpec": null,
+    "fetchSpec": "^13.4.0"
+  },
+  "_requiredBy": [
+    "/bpmn-js"
+  ],
+  "_resolved": "https://registry.npmjs.org/diagram-js/-/diagram-js-13.4.0.tgz",
+  "_shasum": "ec189325e83135862dee1f723a4279ae1436b4cb",
+  "_spec": "diagram-js@^13.4.0",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/bpmn-js",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/diagram-js/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "dependencies": {
+    "@bpmn-io/diagram-js-ui": "^0.2.2",
+    "clsx": "^2.0.0",
+    "didi": "^10.0.1",
+    "hammerjs": "^2.0.1",
+    "inherits-browser": "^0.1.0",
+    "min-dash": "^4.1.0",
+    "min-dom": "^4.1.0",
+    "object-refs": "^0.4.0",
+    "path-intersection": "^3.0.0",
+    "tiny-svg": "^3.0.1"
+  },
+  "deprecated": false,
+  "description": "A toolbox for displaying and modifying diagrams on the web",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "babel-plugin-istanbul": "^6.1.1",
+    "bio-dts": "^0.8.1",
+    "chai": "^4.3.6",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jquery": "^3.5.1",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-coverage": "^2.2.0",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-mocha": "^2.0.1",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^10.1.0",
+    "mocha-test-container-support": "^0.2.0",
+    "npm-run-all": "^4.1.2",
+    "puppeteer": "^21.0.0",
+    "sinon": "^17.0.0",
+    "sinon-chai": "^3.7.0",
+    "typescript": "^5.0.0",
+    "webpack": "^5.74.0"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "test/util",
+    "test/helper",
+    "test/matchers",
+    "!.eslintrc",
+    "!lib/**/*.spec.ts"
+  ],
+  "homepage": "https://github.com/bpmn-io/diagram-js#readme",
+  "keywords": [
+    "modeler",
+    "modeling",
+    "canvas",
+    "diagram-js"
+  ],
+  "license": "MIT",
+  "main": "lib/Diagram.js",
+  "module": "lib/Diagram.js",
+  "name": "diagram-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/diagram-js.git"
+  },
+  "scripts": {
+    "all": "run-s lint test generate-types",
+    "dev": "npm test -- --auto-watch --no-single-run",
+    "generate-types": "run-s generate-types:*",
+    "generate-types:generate": "del-cli \"lib/**/*.d.ts\" && npx bio-dts -r lib",
+    "generate-types:test": "tsc --noEmit --noImplicitAny",
+    "lint": "eslint .",
+    "prepublishOnly": "run-s generate-types",
+    "test": "karma start"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "types": "lib/Diagram.d.ts",
+  "version": "13.4.0"
+}

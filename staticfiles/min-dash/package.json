@@ -1,0 +1,104 @@
+{
+  "_from": "min-dash@^4.1.1",
+  "_id": "min-dash@4.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-r+Z6vxXLSGr+otyCPx9NKPCSixw7LdfZREPTmqfd2a/d5D6w4NCdOxRJs+HyFO6v2pQkyHroGSiINWECK+OWPg==",
+  "_location": "/min-dash",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "min-dash@^4.1.1",
+    "name": "min-dash",
+    "escapedName": "min-dash",
+    "rawSpec": "^4.1.1",
+    "saveSpec": null,
+    "fetchSpec": "^4.1.1"
+  },
+  "_requiredBy": [
+    "/bpmn-js",
+    "/bpmn-moddle",
+    "/diagram-js",
+    "/diagram-js-direct-editing",
+    "/min-dom",
+    "/moddle",
+    "/moddle-xml"
+  ],
+  "_resolved": "https://registry.npmjs.org/min-dash/-/min-dash-4.1.1.tgz",
+  "_shasum": "09b85a5e1d0189ce02a4ec416180aa85db06451b",
+  "_spec": "min-dash@^4.1.1",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/bpmn-js",
+  "author": {
+    "name": "bpmn.io",
+    "email": "http://bpmn.io"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/min-dash/issues"
+  },
+  "bundleDependencies": false,
+  "bundlesize": [
+    {
+      "path": "./dist/min-dash.min.js",
+      "maxSize": "2 kB"
+    },
+    {
+      "path": "./test/bundling/bundled.js",
+      "maxSize": "300 B"
+    }
+  ],
+  "deprecated": false,
+  "description": "Minimum utility toolbelt",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@types/mocha": "^10.0.1",
+    "bundlesize": "^0.18.1",
+    "chai": "^4.3.4",
+    "cpx": "^1.5.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-bpmn-io": "^0.16.0",
+    "mocha": "^9.1.0",
+    "npm-run-all": "^4.1.1",
+    "rollup": "^2.56.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "sinon": "^11.1.2",
+    "sinon-chai": "^3.7.0",
+    "source-map-support": "^0.5.19",
+    "typescript": "^5.0.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/bpmn-io/min-dash",
+  "keywords": [
+    "lodash",
+    "utility",
+    "tool",
+    "belt"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "name": "min-dash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/min-dash.git"
+  },
+  "scripts": {
+    "all": "run-s lint test distro test:types",
+    "bundle": "rollup -c",
+    "bundle:checksize": "bundlesize",
+    "copy": "cpx 'lib/*.d.ts' dist",
+    "dev": "npm test -- --watch",
+    "distro": "run-s copy bundle test:integration test:bundle bundle:checksize",
+    "lint": "eslint .",
+    "prepublishOnly": "run-s distro",
+    "test": "mocha -r source-map-support/register --full-trace test/*.spec.js",
+    "test:bundle": "rollup -c test/bundling/rollup.config.js",
+    "test:integration": "mocha --full-trace test/integration/*.spec.{cjs,js}",
+    "test:types": "tsc --noEmit"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "4.1.1"
+}

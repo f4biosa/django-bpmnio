@@ -1,0 +1,94 @@
+{
+  "_from": "didi@^10.0.1",
+  "_id": "didi@10.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-rddmyUjpIh8pIu9OVtqQjGkZB4jNOaaRMz9AClSH3WUEOoJctxpFmqjTButmI5na5sSIDpfjABe34wEvEhrjcg==",
+  "_location": "/didi",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "didi@^10.0.1",
+    "name": "didi",
+    "escapedName": "didi",
+    "rawSpec": "^10.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^10.0.1"
+  },
+  "_requiredBy": [
+    "/diagram-js"
+  ],
+  "_resolved": "https://registry.npmjs.org/didi/-/didi-10.0.1.tgz",
+  "_shasum": "b995c7cd2d42232be081688512ecc4e67663e344",
+  "_spec": "didi@^10.0.1",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/diagram-js",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "email": "https://github.com/nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/nikku/didi/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Dependency Injection for JavaScript",
+  "devDependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "chai": "^4.3.8",
+    "cross-env": "^7.0.3",
+    "didi": "file:",
+    "eslint": "^8.54.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "mocha": "^10.2.0",
+    "npm-run-all": "^4.1.2",
+    "nyc": "^15.1.0",
+    "rollup": "^4.5.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.2"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "files": [
+    "dist",
+    "lib/index.d.ts"
+  ],
+  "homepage": "https://github.com/nikku/didi#readme",
+  "keywords": [
+    "di",
+    "inversion of control",
+    "dependency",
+    "injection",
+    "injector"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "name": "didi",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nikku/didi.git"
+  },
+  "scripts": {
+    "all": "run-s lint test bundle check-types integration-test",
+    "bundle": "cross-env NODE_ENV=production rollup -c --bundleConfigAsCjs",
+    "check-types": "run-s check-types:*",
+    "check-types:integration": "tsc --project test/integration --pretty --noEmit",
+    "check-types:test": "tsc --project test --pretty --noEmit",
+    "integration-test": "(cd test/integration && mocha --loader=ts-node/esm *.spec.{cjs,ts})",
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint --ext ts,js,cjs .",
+    "lint:tsc": "tsc --pretty --noEmit",
+    "prepare": "run-s bundle",
+    "test": "nyc --reporter=lcov mocha test/*.spec.js"
+  },
+  "sideEffects": false,
+  "source": "lib/index.js",
+  "type": "module",
+  "types": "lib/index.d.ts",
+  "version": "10.0.1"
+}

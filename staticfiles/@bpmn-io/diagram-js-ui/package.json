@@ -1,0 +1,76 @@
+{
+  "_from": "@bpmn-io/diagram-js-ui@^0.2.2",
+  "_id": "@bpmn-io/diagram-js-ui@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-IgOIxOwoqsFB2mMPdXtcbPVPjdYkZ3huW7ipowYLhg5jdRGHlBronQ+LER+lfWro6sPtzEsw7qX8D8Yq9M2S5g==",
+  "_location": "/@bpmn-io/diagram-js-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@bpmn-io/diagram-js-ui@^0.2.2",
+    "name": "@bpmn-io/diagram-js-ui",
+    "escapedName": "@bpmn-io%2fdiagram-js-ui",
+    "scope": "@bpmn-io",
+    "rawSpec": "^0.2.2",
+    "saveSpec": null,
+    "fetchSpec": "^0.2.2"
+  },
+  "_requiredBy": [
+    "/diagram-js"
+  ],
+  "_resolved": "https://registry.npmjs.org/@bpmn-io/diagram-js-ui/-/diagram-js-ui-0.2.2.tgz",
+  "_shasum": "f182476e820641901c10d0079dcfe7b5b022b9f6",
+  "_spec": "@bpmn-io/diagram-js-ui@^0.2.2",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/diagram-js",
+  "author": {
+    "name": "Beatriz Mendes",
+    "url": "https://github.com/smbea"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/diagram-js-ui/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "htm": "^3.1.1",
+    "preact": "^10.11.2"
+  },
+  "deprecated": false,
+  "description": "[![CI](https://github.com/bpmn-io/diagram-js-ui/actions/workflows/CI.yml/badge.svg)](https://github.com/bpmn-io/diagram-js-ui/actions/workflows/CI.yml)",
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-plugin-bpmn-io": "^0.16.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^10.1.0",
+    "npm-run-all": "^4.1.5",
+    "sinon": "^14.0.1",
+    "sinon-chai": "^3.7.0",
+    "webpack": "^5.74.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/bpmn-io/diagram-js-ui#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "name": "@bpmn-io/diagram-js-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/diagram-js-ui.git"
+  },
+  "scripts": {
+    "all": "run-s lint test",
+    "dev": "karma start --auto-watch --no-single-run",
+    "lint": "eslint .",
+    "test": "karma start"
+  },
+  "sideEffects": false,
+  "types": "lib/index.d.ts",
+  "version": "0.2.2"
+}

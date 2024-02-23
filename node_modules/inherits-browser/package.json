@@ -1,0 +1,62 @@
+{
+  "_from": "inherits-browser@^0.1.0",
+  "_id": "inherits-browser@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-CJHHvW3jQ6q7lzsXPpapLdMx5hDpSF3FSh45pwsj6bKxJJ8Nl8v43i5yXnr3BdfOimGHKyniewQtnAIp3vyJJw==",
+  "_location": "/inherits-browser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "inherits-browser@^0.1.0",
+    "name": "inherits-browser",
+    "escapedName": "inherits-browser",
+    "rawSpec": "^0.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.0"
+  },
+  "_requiredBy": [
+    "/bpmn-js",
+    "/diagram-js"
+  ],
+  "_resolved": "https://registry.npmjs.org/inherits-browser/-/inherits-browser-0.1.0.tgz",
+  "_shasum": "893a7c9cc78f2a1e18093aaa203bbb8cf5c30511",
+  "_spec": "inherits-browser@^0.1.0",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/bpmn-js",
+  "author": {
+    "name": "Nico Rehwaldt"
+  },
+  "bugs": {
+    "url": "https://github.com/nikku/inherits-browser/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A inherits fork that is safe per default to use in browsers",
+  "devDependencies": {
+    "cpy-cli": "^4.1.0",
+    "microbundle": "^0.14.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/nikku/inherits-browser#readme",
+  "keywords": [
+    "inherits"
+  ],
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "name": "inherits-browser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikku/inherits-browser.git"
+  },
+  "scripts": {
+    "prepare": "microbundle -f cjs,esm && cpy index.d.ts dist/",
+    "test": "echo 'no tests'"
+  },
+  "sideEffects": false,
+  "source": "index.js",
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0"
+}

@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Diagrams</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .page{ padding: 1em; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <a href="/bpmnio/new_diagram/" class="btn btn-success">Add new Diagram</a>
+      <hr />
+      {% if diagrams %}
+        <table class="table">
+          <th>#</th>
+          <th>Diagrams</th>
+          {% for diagram in diagrams %}
+            <tr>
+              <td>
+                  <a href="/bpmnio/view_diagram/{{ diagram.id }}/" class="btn btn-success">View</a>
+                  <a href="/bpmnio/edit_diagram/{{ diagram.id }}/" class="btn btn-primary">Edit</a>
+                  <a href="/bpmnio/delete_diagram/{{ diagram.id }}/" class="btn btn-danger">Delete</a>
+              </td>
+              <td>{{ diagram }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      {% else %}
+        <h3>No diagram</h3>
+      {% endif %}
+    </div>
+  </body>
+</html>

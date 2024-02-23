@@ -1,0 +1,83 @@
+{
+  "_from": "object-refs@^0.4.0",
+  "_id": "object-refs@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-6kJqKWryKZmtte6QYvouas0/EIJKPI1/MMIuRsiBlNuhIMfqYTggzX2F1AJ2+cDs288xyi9GL7FyasHINR98BQ==",
+  "_location": "/object-refs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "object-refs@^0.4.0",
+    "name": "object-refs",
+    "escapedName": "object-refs",
+    "rawSpec": "^0.4.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.4.0"
+  },
+  "_requiredBy": [
+    "/diagram-js"
+  ],
+  "_resolved": "https://registry.npmjs.org/object-refs/-/object-refs-0.4.0.tgz",
+  "_shasum": "c04d929b32061f469a513724b7d0334ab2d90ede",
+  "_spec": "object-refs@^0.4.0",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/diagram-js",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/Nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/object-refs/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Minimal bi-directional object references for JavaScript",
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "eslint": "^8.55.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "microbundle": "^0.15.1",
+    "mocha": "^10.2.0",
+    "npm-run-all": "^4.1.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/bpmn-io/object-refs#readme",
+  "keywords": [
+    "object",
+    "bidirectional",
+    "references",
+    "refs",
+    "ref",
+    "property",
+    "binding"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "name": "object-refs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/object-refs.git"
+  },
+  "scripts": {
+    "all": "run-s lint lint:types bundle test",
+    "bundle": "microbundle --target node --generateTypes false --sourcemap false --format esm,cjs",
+    "dev": "npm test -- --watch",
+    "lint": "eslint .",
+    "lint:types": "tsc --noEmit",
+    "prepare": "npm run bundle",
+    "test": "mocha test/spec/*.{cjs,js}"
+  },
+  "source": "./src/index.js",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.4.0"
+}

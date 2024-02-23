@@ -1,0 +1,83 @@
+{
+  "_from": "path-intersection@^3.0.0",
+  "_id": "path-intersection@3.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Rdnfb33F9+qadWe3ZyzDpw3KSXQhsK1MByL44QzSDIQtMAujd0zFx9f+kt4SaQp1JOoXl5pl5K28EoEuAEgarA==",
+  "_location": "/path-intersection",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "path-intersection@^3.0.0",
+    "name": "path-intersection",
+    "escapedName": "path-intersection",
+    "rawSpec": "^3.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.0"
+  },
+  "_requiredBy": [
+    "/diagram-js"
+  ],
+  "_resolved": "https://registry.npmjs.org/path-intersection/-/path-intersection-3.0.0.tgz",
+  "_shasum": "40b8369bb30df6c5e63dc64bbea40bc3c403e05a",
+  "_spec": "path-intersection@^3.0.0",
+  "_where": "/Users/fabio/PycharmProjects/django_bpmnio/node_modules/diagram-js",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/path-intersection/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Computes the intersection between two SVG paths",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "domify": "^2.0.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^10.2.0",
+    "npm-run-all": "^4.1.2",
+    "puppeteer": "^21.6.1",
+    "sinon": "^17.0.1",
+    "sinon-chai": "^3.7.0",
+    "webpack": "^5.89.0"
+  },
+  "engines": {
+    "node": ">= 14.20"
+  },
+  "files": [
+    "intersect.js",
+    "intersect.d.ts",
+    "NOTICE"
+  ],
+  "homepage": "https://github.com/bpmn-io/path-intersection#readme",
+  "keywords": [
+    "svg",
+    "path",
+    "path intersection"
+  ],
+  "license": "MIT",
+  "main": "intersect.js",
+  "name": "path-intersection",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/path-intersection.git"
+  },
+  "scripts": {
+    "all": "run-s lint test",
+    "dev": "npm test -- --auto-watch --no-single-run",
+    "lint": "eslint .",
+    "test": "karma start karma.conf.cjs"
+  },
+  "type": "module",
+  "types": "intersect.d.ts",
+  "version": "3.0.0"
+}
